@@ -18,5 +18,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BatimentSeeder::class,
         ]);
+        $this->call([
+            FormationSeeder::class
+        ]);
+        $this->call([
+            TypeFormationSeeder::class
+        ]);
+        $this->call([
+            EleveSeeder::class
+        ]);
     }
 }

@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('batiments', function (Blueprint $table) {
-            $table->id(); // Cree un identifiant unique et auto-incremente
+        Schema::create('formations', function (Blueprint $table) {
+            $table->id();
             $table->string('nom', 30);
             $table->text('description');
             $table->timestamps();
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('batiments');
+        Schema::dropIfExists('formations');
     }
 };

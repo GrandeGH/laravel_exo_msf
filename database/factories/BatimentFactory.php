@@ -17,8 +17,8 @@ class BatimentFactory extends Factory
     public function definition(): array
     {
         return [
-            'nom' => $this->faker->premierNom(),
-            'description' => $this->faker->paragraph(),
+            'nom' => fake()->firstName(),  // Génère un mot aléatoire pour le nom
+            'description' => fake()->paragraph(), // Génère un paragraphe aléatoirement
         ];
     }
 }
